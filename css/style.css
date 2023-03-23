@@ -1,341 +1,72 @@
-.flexContainer {
-    display: flex;
+#logo {
+    width: 12vw;
 }
 
-
-.logo {
-    width: 20%;
-    margin-left: 2em;
-    padding-top: 1%;
-    text-align: center;
-}
-
-nav {
-    padding: 1%;
-}
-
-nav li {
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-    font-size: 20px;
-    border-bottom: 1px solid transparent;
-   
-
-}
-
-.navigation {
-    justify-content: space-between;
-    align-items: center;
-}
-
-.scalingText {
-    font-size: 2vw;
-    color: black;
-}
-
-.scalingText:hover {
-    border-bottom: 1px solid #6E6CE7;
-    padding-bottom: 10px;
-    color: #6E6CE7;
-    font-size: 2vw;
-}
-
-img {
-    max-width: 100%;
-}
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+  }
 
 
-p {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+  .bg-light {
+    background-color: #FEEAFA !important;
 }
 
-#heroText {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-}
-.decorativeText {
-    color: #6E6CE7;
-    font-weight: 900;
-    font-size: 3.5vw;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.purple {
-    color: #6E6CE7;
-    font-weight: 900;
-}
-
-p {
-    font-family: 'Lato';
-    font-size: 16px;
-}
-
-.content {
-    height: 40%;
-    width: 85%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    /* border-bottom: 2px solid black; */
-    padding-bottom: 4em;
-    padding-top: 4em;
-    margin: 0 6em;
-}
-
-hr {
-    background-color: black;
-    height: 2px;
-
-}
-
-#heroImage {
-    width: 40%;
-    box-shadow: 25px 20px #6e6ce7;
-    height: inherit;
-    margin-right: 2em;
-    
-}
-
-#heroText {
-    width: 80%;
-}
-
-.footer {
-    border-top: 2px solid black;
-}
-#iconDiv {
-    display: flex;
-    justify-content: center;
-}
-
-.fa-brands {
-    margin-left: 1em;
-    color: #6E6CE7
-}
-
-.fa-regular {
-    color: #6E6CE7
-}
-.bigIcon {
-    font-size: 2em;
-}
-.footer p {
-    text-align: center;
-}
-
-h3 {
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 3em;
-    font-size: 30px;
-}
-
-.item1 {
-    grid-area: Wonder;
+.jumbotron {
     background-color: #FEEAFA;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    padding: 1em 2em;
 }
 
-.item2 {
-    grid-area: Pawmates;
-    background-color: #D9F6F1;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    padding: 1em 2em;
+.btn-primary {
+    color: #000;
+    background-color: #FFC5F3;
+    border-color: #FFC5F3;
 }
 
-.item3 {
-    grid-area: Nubudget;
-    background-color: #F9F8C7;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    padding: 1em 2em;
+.brmedium {
+    display: block;
+    margin-bottom: 2em;
 }
 
-.item4 {
-    grid-area: Energy;
-    background-color: #DEE2FF;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    padding: 1em 2em;
-}
-
-.workGrid {
-display: grid;
-height: 110%;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-grid-template-areas: "Wonder Pawmates" 
-"Nubudget Energy";
-padding: 2em;
-grid-row-gap: 2em;
-grid-column-gap: 2em;
-margin: 1em;
-  
-}
-
-.workGrid > div > div {
-   width: 70%;
-   margin: auto;
-}
-
-.caseStudyButton {
-    text-align: end; 
-}
-
-.caseStudyButton:link {
-    color: black !important;
-}
-
-.caseStudyButton:visited {
-    color: black !important;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-
-h1 {
-    margin-left: 4em
-}
-
-
-.workGridImgSmall {
-    width: 45% !important;
+.midfiMobile {
+    width: 100%;
     height: auto;
 }
 
-.workGridImgDiv {
-    justify-content: space-between;
-    padding: 30px
+.marginBottom-100 {
+    margin-bottom: 100px;
 }
 
-.workGridImg {
-    padding: 30px 0px
+.marginBottom-50 {
+    margin-bottom: 50px;
 }
 
-.zoom {
-    transition: transform ;
-    transition-duration: 2s;
-  }
+.usabilityTest {
+    list-style-type: none;
 
-  .zoom:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
-  }
+}
 
+.center {
+    text-align: center;
+}
+
+.projectOverview {
+    margin-left: auto;
+}
+
+.wonder {
+    margin-top: 6.5em;
+}
 
 
 @media only screen and (max-width: 600px) {
-    .workGrid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "Wonder" 
-        "Pawmates" 
-        "Nubudget" 
-        "Energy";
-        padding-top: 0px;
-        }
-
-.workGrid h3 {
-    text-align: center;
-}
-
-    .content {
-        padding-top: 0em;
-        flex-direction: column-reverse;
-        width: 80%;
-        padding-bottom: 0em;
-        margin: 0 auto
-        }
-
-    #heroImage {
-        width: 80%;
-        margin-left: 0em;
-        box-shadow: 12.5px 10px #6e6ce7;
-    }
-
-    #heroText {
+    .center {
         text-align: center;
-        margin: 2em auto;
-        font-size: 4vw;
-        
     }
+  }
 
-    .decorativeText {
-        font-size: 5vw;
-    }
 
-    #workTitle {
-        text-align: center;
-        margin-left: 0%;
-    }
 
-    .navigation {
-        flex-direction: column;
-    }
-
-    .logo {
-        margin: 1% auto;
-        padding-left: 0em;
-        width: 30%;
-    }
-
-    nav {
-        padding: 0;
-        width: 100%;
-    }
-
- .navList {
-    padding: 0;
-
- }
-
- .scalingText {
-    font-size: 3.1vw;
-
- }
-
- .footer p {
-    font-size: small;
-}
-
-.footer h3 {
-    font-size: medium;
-    text-align: center;
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 3em;
-    font-size: 25px;
-}
-
-.caseStudyButton {
-    text-decoration: underline;
-    text-align: center;
-}
-
-}
-
-  
+@media only screen and (min-width: 600px) {
+    .pLeftRemove {
+        padding-left: 0;
+  }

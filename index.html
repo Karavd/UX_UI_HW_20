@@ -1,150 +1,413 @@
 <!DOCTYPE HTML>
+<html lang="en"></html>
 
     <head>
-        <link rel="stylesheet" type="text/css" href="./css/style.css"> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/489f7404af.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">         
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+                
          <title>
             KVDesign
         </title>
     </head>
 
     <body>
-        <header class="navigation flexContainer">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img id="logo" src="./images/Logo light pink.png" alt="KVDesign"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
 
-            <img src="./images/Logo.png" alt="KVDesign Logo" class="logo">
-       
-           <nav>
-            <ul class="flexContainer navList">
-                <li><a id="home" class="scalingText" href="/">Home</a></li>
-                <li><a id="about" class="scalingText" href="/">About</a></li>
-                <li><a id="portfolio" class="scalingText" href="/">Portfolio</a></li>
-                <li><a class="scalingText" href="/">Resume</a></li>
-                <li><a class="scalingText" href="/">Contact</a></li>
-            </ul>
-           </nav>
-        </header> 
-
-            <div class="content">
-                <div>
-                    <p id="heroText">  
-                        Hi! I’m <span class="decorativeText">Kara Van Delden</span>, a former dancer turned product designer based in <span class="purple">San Antonio</span>. I enjoy thinking on my feet (quite literally) to create beautiful user experiences. 
-                    </p>
-                 </div>
-                <img id="heroImage" src="./images/Headshot.jpeg" alt="Headshot of Kara">
-            </div>
-            <hr>
-            <section class="myWork">
-                <h2 id="workTitle">
-                    My Work
-                </h2>
-
-                <div class="workGrid">
-            
-                    <div class="item1">
-                        <h3>
-                            Wonder Theatre Web Redesign 
-                        </h3>
-
-                        <p class="gridParagraph">
-                            Redesigned the Wonder Theatre website to <strong>match its present day branding</strong> and <strong>increase user efficiency</strong> while navigating throughout the site.
-                        </p>
-
-                        <div>
-                            <img class="workGridImg zoom" src="./images/Wonder Theatre.png" id="wonderImg" alt="Wonder Theatre Website">
-                        </div>
-    
-                    
-                            <a href="/" class="caseStudyButton" id="wonderButton">
-                            View Case Study</a>
-                    </div>
-
-                    <div class="item2">
-                        <h3>
-                            PawMates App
-                        </h3>
-
-                        <p class="gridParagraph">
-                            An app enabling users <strong>to discover the best dog breed</strong> suited around <strong>personality/lifestyle characteristics</strong>.                         
-                        </p>
-
-                        <div class="flexContainer workGridImgDiv">
-                            <img class="workGridImgSmall pawmatesImg zoom" src="./images/PawMates.png" alt="PawMates Mobile App">
-                            <img class="workGridImgSmall pawmatesImg zoom" src="./images/PawMates2.png" alt="PawMates Mobile App">
-                        </div>
-    
-                        <a href="/" class="caseStudyButton" id="pawmatesButton">
-                            View Case Study</a>
-                    </div>
-
-                    <div class="item3">
-                        <h3>
-                            NuBudget App                      
-                        </h3>
-
-                        <p class="gridParagraph">
-                            Designed for <strong>frequent travelers</strong>, NuBudget aids in <strong>planning for</strong> and <strong>managing travel expenses</strong>.
-                        </p>
-
-                        <div class="flexContainer workGridImgDiv">
-                            <img class="workGridImgSmall nubudgetImg zoom" src="./images/NuBudget.png" alt=" NuBudget Mobile App">
-                            <img class="workGridImgSmall nubudgetImg zoom" src="./images/NuBudget2.png" alt=" NuBudget Mobile App">
-                        </div>
-    
-                        <a href="/" class="caseStudyButton" id="nubudgetButton">
-                            View Case Study</a>
-                    </div>
-
-                    <div class="item4">
-                        <h3>
-                            U.S. Department of Energy Web Redesign
-                        </h3>
-
-                        <p class="gridParagraph">
-                            Delivered a way for users to <strong>better navigate</strong> the Department of Energy site with ease and accuracy to <strong>maximize user comprehension</strong>.                         
-                        </p>
-
-                        <div>
-                            <img class="workGridImg zoom" src=".//images/Department of Energy.png" id="doeImg"  alt="Department of Energy Website">
-                        </div>
-    
-                        <a href="/" class="caseStudyButton" id="doeButton">
-                            View Case Study</a>
-                    </div>
-
-                    
-                </div>
-
-
-
-            </section>
-
-       
-        <footer class="footer">
-        <h3 class="letsConnect"> 
-            Let's Connect!
-        </h3>
-        <div id="iconDiv">
-            <i class="fa-regular fa-envelope bigIcon" >
-            </i>
-            <i class="fa-brands fa-linkedin bigIcon">
-            </i>
-        </div>
-        <h3> 
-            Feel free to reach out for collaborations or just to say hello!
-        </h3>
+              </ul>
         
-        <p>
-            Copyright &copy; Kara Van Delden
-        </p>
-        </footer>
-    </body>
+            </div>
+          </nav>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="./js/index.js"></script>    
+
+        <div class="jumbotron container-fluid">
+            <div class="row">
+            <img class="col-md-6 col-sm-10 h-25" id="wonderTheatre" src="./images/Wonder Theatre.png" alt="Wonder Theatre">
+                <div class="col-md-6">
+            <h1 class="display-4 center">Wonder Theatre Redesign</h1>
+            <p class="lead center">Wonder Theatre is a nonprofit, live performance theatre engaging the San Antonio community with musical productions and educational programming year round.</p>
+            <hr class="my-4">
+            <p class="center">This project redesigned the Wonder Theatre website to match its present day branding and increase user efficiency while navigating throughout the site. </p>
+            <div class="col-sm-12 pLeftRemove">
+            <a class="btn btn-primary btn-lg" href="#" role="button">View Website Redesign</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button">View Slide Deck</a>
+                </div>
+            </div>     
+            </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row projectOverview">
+            <h2 class="col-sm-12">Project Overview</h2>
+            <ul class="col-sm-12 col-md-4">
+              <h6 class="col-sm-12 col-md-4 text-nowrap"> UX Design</h6>
+              <li>User Research</li>
+              <li>Usability Test</li>
+              <li>Stakeholder Interview</li>
+              <li>Heuristic Evaluation</li>
+              <li>User Persona/ User Journey Map</li>
+              <li>Competitor Analysis</li>
+              <li>IA Construction + Card Sorting </li>
+              <li>A/B Test </li>
+            </ul>
+            <ul class="col-sm-12 col-md-3">
+              <h6 class="col-sm-12 col-md-3 text-nowrap"> UI Design</h6>
+              <li>Mobile + Desktop Version</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Mirco-Animation Creating</li>
+              <li>Story Guide</li>
+              <li>Iteration</li>
+            </ul>
+            <ul class="col-sm-12 col-md-3">
+              <h6 class="col-sm-12 col-md-3 text-nowrap"> Team Project</h6>
+              <li>Kara Van Delden</li>
+              <li>Paola Esquivel</li>
+              <li>Delilah Quezada</li>
+              <li>Kristi Simmons</li>
+            </ul>
+            <ul class="col-sm-12 col-md-2">
+              <h6 class="col-sm-12 col-md-2"> Timeline</h6>
+              <li>3 weeks (January 2023)</li>
+            </ul>
+            
+          </div>
+          <div class="marginBottom-100"></div>
+
+        
+          <div class="col-sm-12">
+            <h4>The Problem</h4>
+            <p> We believe updating the current website to include a more user-friendly navigation for those who enjoy the world of theater will achieve more growth and sustainability for performing arts and education in San Antonio.
+            <br>
+            <br>
+            How might we make users feel more confident and equipped with the proper knowledge about their local community theater show dates, times, contributions, and audition/volunteer resources?
+            </p>
+            <div class="marginBottom-100"></div>
+          </div>
+
+          <div class="col-sm-12">
+            <h4>The Solution</h4>
+            <p>Create a responsive web design and improve user knowledge while gaining more traction about current events and shows.
+            </p>
+            <div class="marginBottom-100"></div>
+          </div>
+        
+      
+        <hr>
+        
+          <div class="col-sm-12">
+            <h2>The Research</h2>
+            <div class="marginBottom-50"></div>
+          <h4>Stakeholder Interview</h4>
+            <p> We were fortunate enough to get an interview with a member from the Board of Directors. During the interview, we learned there would be a rebranding of the Woodlawn Theatre to Wonder Theater due to location change of venue. We also gained insight on the importance of donations and stakeholder’s desire of stronger call to action for donations.</p>
+          </div>
+          
+        <div class="row col-12">
+          <div class="col-md-6 col-sm-6">
+            <img class= "midfiMobile" src="./images/Woodlawn Logo.png" alt="Woodlawn">
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <img class="midfiMobile wonder" src="./images/Wonder Logo.png" alt="Wonder">
+          </div>
+        </div>
+
+        <div class="marginBottom-100"></div>
+            
+          
+        <div class="col-sm-12" >
+          <h4>User Interviews</h4>
+            <p> For our User Interview Testing Plan, we interviewed 4 individuals that are part of or enjoy the world of performing arts. We had 18 participants take our survey with our main objective on testing the navigation bar feature and volunteer sign up forms. 
+            Through our user interviews and survey data, we found that:</p>
+            <ul>
+              <li>Users prefer to buy tickets online</li>
+              <li>Users would use the sight to learn more information about upcoming shows</li>
+              <li>Users love to see shows multiple times a year</li>
+              <li>Users are passionate about the performing arts and are looking for ways to give back </li>
+            </ul>
+           <div class="marginBottom-100"></div>
+        </div>
+
+        
+        <div class="col-sm-12">
+           <h4>Affinity Diagram</h4>
+          <div>
+            <img class= "midfiMobile" src="./images/Affinity Diagram.png" alt="Affinity Diagram">
+          </div>
+          <div class="marginBottom-100"></div>
+        </div>
+
+       <h4 class="col-sm-12 ">Survey Data</h4>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10 col-sm-10">
+            <img class="midfiMobile" src="./images/Survey Data.png " alt="Survey Data">
+          </div>
+        </div>
+        <div class="marginBottom-100"></div>
+
+        
+        <div class="col-sm-12">
+           <h4>User Persona</h4>
+          <div class="col-sm-12">
+            <img class="midfiMobile" src="./images/User Persona.png" alt="User Persona">
+          </div>
+          <div class="marginBottom-100"></div>
+          
+        </div>
+
+        <div class="col-sm-12">
+           <h4>User Insight</h4>
+            <p>A performing arts educator needs a seamless way to view important information about shows, youth programs, and auditions in order to accomplish her goal of sharing, advocating and promoting theater arts within her local community.
+            </p>
+            <div class="marginBottom-100"></div>
+        </div>
+
+        <div class="col-sm-12">
+          <h4>Storyboard</h4>
+            <p>Our storyboard was created as a branch off of our User Persona, Audrey. We wanted to include the perspective of one her students, and highlight the importance of what new experiences can create.</p>
+            <div class="col-sm-12">
+              <img class="midfiMobile" src="./images/Storyboard full.png" alt="StoryBoard">
+            </div>
+            <div class="marginBottom-100"></div>
+        </div>
+
+      <hr>
+
+          <div class="col-sm-12">
+            <h2>Exploring Solutions</h2>
+          <div class="marginBottom-50"></div>
+            <h4>Feature Prioritization</h4>
+            <p> We came to develop a possible solution by creating our I like, I wish, what if chart. The Feature Prioritization Matrix taught us that the most popular feature is the call to action for volunteers/donations and creating a visual calendar in which someone could see additional showdates.</p>
+          </div>
+
+          <div class="col-md-12 col-sm-12">
+            <img class="midfiMobile" src="./images/Feature Prioritization.png" alt="Feature Prioritization">
+          </div>
+          <div class="marginBottom-100"></div>
+          
+        
+         <div class="col-sm-12">
+          <h4>Card Sorting/Sitemap</h4>
+            <p>To come up with our sitemap we used the card sorting method. We took all of the pages on their current website and went through organizing, grouping and prioritizing until we came up with a user friendly navigation system. Previously they had a split navigation with items taking up space in the main navigation that we felt errr lower priority.</p>
+        </div>
+
+          <div class="col-md-12 col-sm-12">
+            <img class="midfiMobile" src="./images/Card Sorting:Sitemap.png" alt="Card Sorting">
+          </div>
+          <div class="marginBottom-100"></div>
+
+           <h4 class="col-sm-12 ">User Flow</h4>
+           <div class="col-md-12 col-sm-12" >
+            <img class="midfiMobile" src="./images/User Flow.png" alt="User Flow">
+          </div>
+          <div class="marginBottom-100"></div>
+        
+      <hr>
+
+      
+        <div class="col-sm-12">
+          <h2>Mockups</h2>
+          <div class="marginBottom-50"></div>
+        <h4>Low Fidelity-Mobile</h4>
+        </div>
+
+        <div class="row">
+        <div class="col-md-2 col-sm-4">
+          <img class="midfiMobile" src="./images/Mobile lofi 1.png" alt="Mobile lofi">
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="midfiMobile" src="./images/Mobile lofi 2.png" alt="Mobile lofi">
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="midfiMobile" src="./images/Mobile lofi 3.png" alt="Mobile lofi">
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="midfiMobile" src="./images/Mobile lofi 4.png" alt="Mobile lofi">
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="midfiMobile" src="./images/Mobile lofi 5.png" alt="Mobile lofi">
+        </div>
+      </div>
+      <div class="marginBottom-100"></div>
+      
+
+      
+        <div class="col-sm-12">
+        <h4>Low Fidelity-Desktop</h4>
+        </div>
+
+        <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <img class="midfiMobile" src="./images/Desktop lofi 1.png" alt="Desktop lofi">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <img class="midfiMobile" src="./images/Desktop lofi 2.png" alt="Desktop lofi">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <img class="midfiMobile" src="./images/Desktop lofi 3.png" alt="Desktop lofi">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <img class="midfiMobile" src="./images/Desktop lofi 4.png" alt="Desktop lofi">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <img class="midfiMobile" src="./images/Desktop lofi 5.png" alt="Desktop lofi">
+        </div>
+      </div>
+      <div class="marginBottom-100"></div>
+     
+
+
+
+      
+        <div class="col-sm-12">
+        <h4>Low Fidelity Usability Testing </h4>
+          <p>Before creating our mid fidelity wireframe, we ran usability tests to ensure our users could navigate throughout our designed pages. We tested 4 users and gave them the following tasks to complete:
+            <ul>
+              <li class="usabilityTest">Task 1: Access the get involved page</li>
+              <li class="usabilityTest">Task 2: Reach the volunteer form</li>
+              <li class="usabilityTest">Task 3: Submit a volunteer form</li>
+          </ul>
+          Through our low fidelity testing we saw that users generally wanted to know more about the available volunteer positions before signing up. A key insight we found was to make the form with with multi answer capability so users wouldn’t have to submit multiple times. 
+          </p>
+        <div class="marginBottom-100"></div>
+        </div>
+
+         <h4 class="col-sm-12 ">Mid-Fidelity-Mobile</h4>
+
+         <div class="row">
+          <div class="col-md-3 col-sm-3">
+           <img class=" midfiMobile" src="./images/Mobile midfi 1 .png" alt="Mobile  midfi">
+          </div>
+          <div class="col-md-3 col-sm-3">
+           <img class="midfiMobile" src="./images/Mobile midfi 2.png" alt="Mobile midfi">
+          </div>
+          <div class="col-md-3 col-sm-3">
+           <img class="midfiMobile" src="./images/Mobile midfi 3.png" alt="Mobile midfi">
+          </div>
+          <div class="col-md-3 col-sm-3">
+           <img class="midfiMobile" src="./images/Mobile midfi 4.png" alt="Mobile midfi">
+          </div>
+          <div class="col-md-3 col-sm-3">
+           <img class="midfiMobile" src="./images/Mobile midfi 5.png" alt="Mobile midfi">
+          </div>
+          <div class="col-md-3 col-sm-3">
+           <img class="midfiMobile" src="./images/Mobile midfi 6.png" alt="Mobile midfi">
+          </div>
+          <div class="col-md-3 col-sm-3">
+           <img class="midfiMobile" src="./images/Mobile midfi 8.png" alt="Mobile midfi">
+          </div>
+         </div>
+         <div class="marginBottom-100"></div>
+      
+
+
+         <h4 class="col-sm-12 ">Mid Fidelity-Desktop</h4>
+         
+         <div class="row">
+          <div class="col-md-4 col-sm-4">
+           <img class="midfiMobile" src="./images/Desktop midfi 1.png" alt="Desktop midfi">
+          </div>
+          <div class="col-md-4 col-sm-4">
+           <img class="midfiMobile" src="./images/Desktop midfi 2.png" alt="Desktop midfi">
+          </div>
+          <div class="col-md-4 col-sm-4">
+           <img class="midfiMobile" src="./images/Desktop midfi 3.png" alt="Desktop midfi">
+          </div>
+          <div class="col-md-4 col-sm-4">
+           <img class="midfiMobile" src="./images/Desktop midfi 4.png" alt="Desktop midfi">
+          </div>
+          <div class="col-md-4 col-sm-4">
+           <img class="midfiMobile" src="./images/Desktop midfi 5.png" alt="Desktop midfi">
+          </div>
+           <div class="col-md-4 col-sm-4">
+           <img class="midfiMobile" src="./images/Desktop midfi 6.png" alt="Desktop midfi">
+          </div>
+           <div class="col-md-4 col-sm-4">
+           <img class="midfiMobile" src="./images/Desktop midfi 7.png" alt="Desktop midfi">
+          </div>
+         </div>
+         <div class="marginBottom-100"></div>
+     
+
+
+       
+        <div class="col-sm-12 ">
+        <h4>A/B Testing</h4>
+          <p> We then implemented an A/B test to compare different calendars we wanted to include on our homepage. Through testing we found that users liked version b. Ultimately it performed better, and the difference was significant. Because of that we were fairly confident that it is preferred more, and not performing better due to random chance. Users gravitated towards b because of the drop down menu which allows for an easier date search than the arrows on version A.
+          </p>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <img class= "midfiMobile" src="./images/Calendar A new.png" alt="A/B Testing">
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <img class="midfiMobile" src="./images/Calender B new.png" alt="A/B Testing">
+        </div>
+        </div>
+        <div class="marginBottom-100"></div>
+         
+        
+        <h4 class="col-sm-12 ">High Fidelity/Final Prototype</h4>
+
+        <div class="col-md-12 col-sm-12">
+          <img class="midfiMobile" src="./images/High Fidelity desktop.png" alt="Wonder Desktop">
+        </div>
+        <div class=" col-4 offset-4">
+        <a href=# class="center"> View Prototype </a>
+      </div>
+        <div class="marginBottom-50"></div>
+
+
+        <div class=" row col-md-12">
+          <div class="col-md-4 col-sm-4" ></div>
+        <div class="col-md-4 col-sm-4">
+          <img class="midfiMobile" src="./images/High Fidelity mobile.png" alt="Wonder Mobile">
+        </div>
+         </div>
+<div class=" col-4 offset-4">
+        <a href=#> View Prototype</a>
+      </div>
+        
+      </div>
+      
+        
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./js/index.js"></script>     -->
 
 </html>
 
